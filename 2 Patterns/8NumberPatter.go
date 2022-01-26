@@ -5,7 +5,9 @@
 // 3 0 0 3
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	fmt.Println("Enter any number")
@@ -14,9 +16,17 @@ func main() {
 	pattern(n)
 }
 func pattern(n int) {
-	for i := 0; i <= n; i++ {
-		for j := 0; j < i; j++ {
-			fmt.Print(" ", i)
+	for i := 1; i <= n; i++ {
+		for j := 1; j <= i; j++ {
+			if i == j {
+				fmt.Print(i)
+			} else {
+				if j == 1 {
+					fmt.Print(i)
+				}
+				fmt.Print("0")
+			}
+
 		}
 		fmt.Println("")
 	}
