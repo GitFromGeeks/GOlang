@@ -1,0 +1,2 @@
+// aaabbxbbx
+// out aaabbbb

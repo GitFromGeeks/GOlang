@@ -1,0 +1,2 @@
+// hello
+// out hel*lo
