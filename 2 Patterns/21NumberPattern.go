@@ -20,7 +20,7 @@ func pattern(n int) {
 	for i := 0; i < 2*n-1; i++ {
 		for j := 0; j < 2*n-1; j++ {
 			if i >= 1 && j >= 1 && i != 2*n-2 && j != 2*n-2 {
-				fmt.Print(n - 1)
+				fmt.Print(n - i)
 			} else {
 				fmt.Print(n)
 			}
